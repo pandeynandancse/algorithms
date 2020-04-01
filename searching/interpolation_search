@@ -16,4 +16,6 @@ else:
   
   
   
-  O(log (log n))
+  if uniformly distributed -->> O(log (log n))
+  worst case -->O(n)
+  
