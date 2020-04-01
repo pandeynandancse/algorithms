@@ -4,7 +4,9 @@ TC : O(n * log n) in all cases
 T(n) = 2T(n/2) + O(n)  = O(n * log n) = Master Method
 
 
-
+Algorithmic Paradigm: Divide and Conquer
+Sorting In Place: No in a typical implementation
+Stable: Yes
 
 
 void mergeSort(int arr[], int l, int r) 
