@@ -1,0 +1,21 @@
+Given an array with both +ive and -ive integers, return a pair with highest product.
+
+A Simple Solution is to consider every pair and keep track maximum product.  -> O(n *2)
+
+
+A Better Solution is to use sorting. Below are detailed steps.
+1) Sort input array in increasing order.
+2) If all elements are positive, then return product of last two numbers.
+3) Else return maximum of products of first two and last two numbers.
+Time complexity of this solution is O(nLog n).
+
+
+
+
+An Efficient Solution can solve the above problem in single traversal of input array. The idea is to traverse the input array and keep track of following four values.
+a) Maximum positive value
+b) Second maximum positive value
+c) Maximum negative value i.e., a negative value with maximum absolute value
+d) Second maximum negative value.
+At the end of the loop, compare the products of first two and last two and print the maximum of two products. 
+
