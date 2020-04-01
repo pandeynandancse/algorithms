@@ -1,0 +1,19 @@
+sorted array of n uniformly distributed values
+
+uniformly distribution means gap between adjacent element is same
+
+pos = low + [ ( (x-a[low])/(a[high] - a[low]) ) * (high - low) ]
+
+if(a[pos] == x):
+  return ok;
+ 
+if(a[pos] > x):
+  reassign values of low,high,a[low],a[high] and search in left half
+ 
+else:
+  reassign values of low,high,a[low],a[high] and search in right  half
+  
+  
+  
+  
+  O(log (log n))
