@@ -1,0 +1,31 @@
+An array element is a peak if it is NOT smaller than its neighbours. 
+For corner elements, we need to consider only one neighbour. 
+
+
+Following corner cases give better idea about the problem.
+
+    If input array is sorted in strictly increasing order, the last element is always a peak element. For example, 50 is peak element in {10, 20, 30, 40, 50}.
+    If the input array is sorted in strictly decreasing order, the first element is always a peak element. 100 is the peak element in {100, 80, 60, 50, 20}.
+    If all elements of input array are same, every element is a peak element.
+
+
+Naive approach :
+
+    If in the array, the first element is greater than the second or the last element is greater than the second last, print the respective element and terminate the program.
+    Else traverse the array from the second index to the second last index
+    If for an element array[i], it is greater than both its neighbours, i.e., array[i] > array[i-1] and array[i] > array[i+1], then print that element and terminate.
+Time Complexity : o(n)
+
+
+
+
+
+
+Method 2:
+Binary Search :
+Check if the mid value or index mid = (l+r)/2, is the peak element or not, if yes then print the element and terminate.
+Else if the element on the left side of the middle element is greater then check for peak element on the left side, i.e. update r = mid – 1
+Else if the element on the right side of the middle element is greater then check for peak element on the right side, i.e. update l = mid + 1 
+
+
+O(log n)
