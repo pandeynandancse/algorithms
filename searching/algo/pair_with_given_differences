@@ -1,5 +1,9 @@
-First sort that takes O(n log n) time.
+First sort array  that takes O(n log n) time.
 
 Take two index variables i and j, initialize them as 0 and 1 respectively.
 Now run a linear loop. If arr[j] – arr[i] is smaller than n, we need to look for greater arr[j], so increment j. 
 If arr[j] – arr[i] is greater than n, we need to look for greater arr[i], so increment i.
+This will take O(n) 
+
+
+So total time complexity will be O(n log n)
