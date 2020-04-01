@@ -1,0 +1,6 @@
+Given a sorted array arr[] and a number x, write a function that counts the occurrences of x in arr[]. 
+
+
+1) Using linear search : o(n)
+2) Using Binary search : first find index of element in array using binary search -->> then count occurence in left block -->> then count occurence in right block.
+   Complexity : O(log n + count)  where count is number of occurences
