@@ -9,6 +9,14 @@ Sorting In Place: No in a typical implementation
 Stable: Yes
 
 
+Merge Sort is useful for sorting linked lists in O(nLogn) time.
+Unlike arrays, linked list nodes may not be adjacent in memory. 
+In arrays, we can do random access as elements are contiguous in memory. 
+Unlike arrays, we can not do random access in the linked list. 
+Quick Sort requires a lot of this kind of access.
+In linked list to access i’th index, we have to travel each and every node from the head to i’th node as we don’t have a continuous block of memory.
+Therefore, the overhead increases for quicksort. Merge sort accesses data sequentially and the need of random access is low. 
+
 void mergeSort(int arr[], int l, int r) 
 { 
     if (l < r) 
