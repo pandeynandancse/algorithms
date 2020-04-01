@@ -1,0 +1,8 @@
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+
+BC - O(n) .Best case occurs when array is already sorted.
+AC - O(n* n)
+WC - O(n*n). Worst case occurs when array is reverse sorted.
+
+Sorting in place : yes
+Stable : yes 
