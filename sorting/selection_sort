@@ -2,3 +2,9 @@ The selection sort algorithm sorts an array by repeatedly finding the minimum el
 from unsorted part and putting it at the beginning. 
 
 O(n*n) in all cases
+
+
+useful when memory write is a costly operation.
+
+sorting in place : yes
+
