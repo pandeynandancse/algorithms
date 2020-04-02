@@ -1,0 +1,4 @@
+A frugal number is a number whose number of digits is strictly greater than the number of digits in its prime factorization
+(including exponents). 
+If the exponent is 1 for a certain prime, involved in the prime factorization,
+then that exponent does not contribute to the number of digits in the prime factorization.
