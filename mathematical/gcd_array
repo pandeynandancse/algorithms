@@ -1,0 +1,3 @@
+gcd(a, b, c) =  if (gcd(a,b)!=1) return gcd(gcd(a, b), c)
+                else : return 1
+             
