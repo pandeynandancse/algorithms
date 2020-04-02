@@ -1,0 +1,1 @@
+A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.
