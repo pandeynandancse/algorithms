@@ -1,0 +1,32 @@
+https://www.geeksforgeeks.org/print-kth-common-factor-two-numbers/
+
+
+Given three numbers x, y and k, find the k’th common factor of x and y. 
+Print -1 if there are less than k common factors of x and y.
+
+
+We find the smaller of two numbers as common factor cannot be greater than the smaller number. T
+hen we run a loop from 1 to the smaller number. 
+For every number i, we check if it is a common factor. 
+If yes, we increment count of common factors.
+
+
+int findKCF(int x, int y, int k) 
+{ 
+   // Find smaller of two numbers 
+   int small = min(x, y); 
+  
+   // Count common factors until we either 
+   // reach small or count becomes k. 
+   int count = 1; 
+   for (int i=2; i<=small; i++) 
+   { 
+      if (x % i==0 && y % i == 0) 
+         count++; 
+      if (count == k) 
+         return i; 
+   } 
+  
+   // If we reached small 
+   return -1; 
+} 
