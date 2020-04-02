@@ -1,0 +1,11 @@
+Method 1 :  A simple solution is to find all prime factors of both numbers, then find union of all factors present in both numbers.
+            Finally return product of elements in union.
+
+
+
+
+Method 2: An efficient solution is based on below formula for LCM of two numbers ‘a’ and ‘b’.
+
+   a x b = LCM(a, b) * GCD (a, b)
+
+   LCM(a, b) = (a x b) / GCD(a, b) 
