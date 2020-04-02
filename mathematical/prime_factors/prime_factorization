@@ -3,7 +3,7 @@
 3) If n is a prime number and is greater than 2, then n will not become 1 by above two steps. So print n if it is greater than 2.
 
 
-
+divide with 2,3,5,7,9.......,sqrt(n)
 
 
 void primeFactors(int n) 
