@@ -1,0 +1,9 @@
+start from any vertex
+mark it visited 
+enque all neighbours
+according to first in first out, go to that next neighbour if it is not marked and make it visited.
+repeat that process.
+
+TC : O(E + V)
+
+
