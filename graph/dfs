@@ -26,5 +26,5 @@ d)  check whether graph is biptartite  : There should be no adjacent of same col
 
 e) Finding Strongly Connected Components of a graph  : each node is connected with every other node
 
-
+f) For a weighted graph, DFS traversal of the graph produces the minimum spanning tree and all pair shortest path tree.
 
