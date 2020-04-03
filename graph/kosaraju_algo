@@ -1,0 +1,55 @@
+strongly connected component
+
+
+
+Algo :
+1) Initialize all vertices as not visited.
+2) Do a DFS traversal of graph starting from any arbitrary vertex v. If DFS traversal doesn’t visit all vertices, then return false.
+3) Reverse all arcs (or find transpose or reverse of graph)
+4) Mark all vertices as not-visited in reversed graph.
+5) Do a DFS traversal of reversed graph starting from same vertex v (Same as step 2). If DFS traversal doesn’t visit all vertices, then return false. Otherwise return true.
+
+
+
+
+The idea is, if every node can be reached from a vertex v(by dfs), and every node can reach v(transpose graph and do dfs),
+then the graph is strongly connected. 
+
+
+
+
+bool Graph::isSC() 
+{ 
+    // St1p 1: Mark all the vertices as not visited (For first DFS) 
+    bool visited[V]; 
+    for (int i = 0; i < V; i++) 
+        visited[i] = false; 
+  
+    // Step 2: Do DFS traversal starting from first vertex. 
+    DFSUtil(0, visited); 
+  
+     // If DFS traversal doesn’t visit all vertices, then return false. 
+    for (int i = 0; i < V; i++) 
+        if (visited[i] == false) 
+             return false; 
+  
+    // Step 3: Create a reversed graph 
+    Graph gr = getTranspose(); 
+  
+    // Step 4: Mark all the vertices as not visited (For second DFS) 
+    for(int i = 0; i < V; i++) 
+        visited[i] = false; 
+  
+    // Step 5: Do DFS for reversed graph starting from first vertex. 
+    // Staring Vertex must be same starting point of first DFS 
+    gr.DFSUtil(0, visited); 
+  
+    // If all vertices are not visited in second DFS, then 
+    // return false 
+    for (int i = 0; i < V; i++) 
+        if (visited[i] == false) 
+             return false; 
+  
+    return true; 
+} 
+  
