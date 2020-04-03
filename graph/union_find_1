@@ -11,6 +11,14 @@ Union: Join two subsets into a single subset.
 if one vertex of edge is in another set and other vertex of that edge is in other subset then union and make one vertex as parent of another vertex.
 
 
+
+TC : O(V) in worst case but can be reduced to o(log V) by using 'Union by rank Find by optimized by path compression' . 
+     This improved techniques is used in Krushkals algorithm.
+
+
+
+
+
 // A union-find algorithm to detect cycle in a graph 
 #include <stdio.h> 
 #include <stdlib.h> 
