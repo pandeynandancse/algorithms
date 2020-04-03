@@ -100,4 +100,5 @@ int main()
 
 
 
-Cons: Queries like whether there is an edge from vertex u to vertex v are not efficient .
+Cons: Queries like whether there is an edge from vertex u to vertex v are not efficient --->> O(v)
+So use adjacency list representation using sets in stl -->> O(log v) -->> becoz sets are internally implemnted as Binary seearch trees. 
