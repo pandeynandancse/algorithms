@@ -1,0 +1,35 @@
+1)  The only difference between a class and a struct in C++ is that structs have default public members and bases
+and classes have default private members and bases.
+Both classes and structs can have a mixture of public and private members, can use inheritance, and can have member functions.
+
+
+
+2) stack  -->> top to down -->> eg. static array -->> memory allocated to satck is automatically deallocated. --->>eg. int arr[n].
+   heap -->> bottom to up -->> eg. dynammic array -->> need to deallocate memory manually else deallocated when program ends. -->> malloc,calloc
+   
+3) dynammic array --> int * arr = (int *)malloc(n*sizeof(int))  ---->>> if not sufficient memory to allocate then null pointer will be returned.
+                  -->> to deallocate ->> free(arr)
+                  -->> memory is allocate in chunk but not dividded in blocks
+                  -->> contiguous allocation
+                  
+                  -->> int *arr = (int*)calloc(n,sizeof(int))
+                  -->> free(ptr)
+                  -->> single chunk but divided into blocks
+                  -->> continuous allocation
+                  
+                  
+                  -->>arr = realloc(arr,x)  // x is new size of array
+                  
+                  In C++ , below-->>>
+                  i)-->> int* ptr = new int;   /// ptr points to a location where int is present
+                  ii)-->> int * ptr = new int(10)  //// ptr points to a location where int is present and by default initialized with 10
+                  iii)-->> int * ptr = new int[10]  /// ptr is pointer to an array of integer
+                 -->> to deallocate -->> delete ptr; -->> for i) and ii)
+                 -->> to deallocate -->> delete []ptr -->> for iii)
+                 
+                 
+                  
+                 
+   
+   
+  
