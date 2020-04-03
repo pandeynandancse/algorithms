@@ -1,0 +1,36 @@
+All pairs shortest path
+
+Uses adjacenecy matrix
+O(V ^ 3)
+
+
+void floydWarshall (int graph[][V]) 
+{ 
+    int dist[V][V], i, j, k; 
+  
+    for (i = 0; i < V; i++) 
+        for (j = 0; j < V; j++) 
+            dist[i][j] = graph[i][j]; 
+  
+  
+  // intermediate node k
+    for (k = 0; k < V; k++) 
+    { 
+        // Pick all vertices as source one by one 
+        for (i = 0; i < V; i++) 
+        { 
+            // source node i
+            for (j = 0; j < V; j++) 
+            { 
+                // DEstination vertex j
+                if (dist[i][k] + dist[k][j] < dist[i][j]) 
+                    dist[i][j] = dist[i][k] + dist[k][j]; 
+            } 
+        } 
+    } 
+  
+    // Print the shortest distance matrix 
+    printSolution(dist); 
+} 
+  
+
