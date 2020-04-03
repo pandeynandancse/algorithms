@@ -1,3 +1,6 @@
 make node  visited and print that node
 list all adjacent vertices
 if not visited recursively call 1 to 3
+
+
+O(E+V)
