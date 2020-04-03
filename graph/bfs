@@ -7,3 +7,20 @@ repeat that process.
 TC : O(E + V)
 
 
+Application :
+
+a) Shortest Path and Minimum Spanning Tree for unweighted graph 
+
+b) In undirected graphs, either Breadth First Search or Depth First Search can be used to detect cycle. 
+   We can use BFS to detect cycle in a directed graph also
+   
+c) Ford-Fulkerson algorithm, we can either use Breadth First or Depth First Traversal to find the maximum flow.
+   Breadth First Traversal is preferred as it reduces worst case time complexity to O(VE ^ 2).
+    
+d) To test if a graph is Bipartite : We can either use Breadth First or Depth First Traversal.
+   
+e) Path Finding  : We can either use Breadth First or Depth First Traversal to find if there is a path between two vertices.
+
+f) We can either use Breadth First or Depth First Traversal to find all nodes reachable from a given node.
+
+g) Prims MST  and  Dijkstra's Single Source Shortest Path
