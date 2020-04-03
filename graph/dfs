@@ -4,3 +4,27 @@ if not visited recursively call 1 to 3
 
 
 O(E+V)
+
+
+
+Application of dfs:
+
+a) Detecting cycle :
+
+
+
+b) find path from one vertex to another :
+            Call DFS(G, u) with u as the start vertex.
+            ii) Use a stack S to keep track of the path between the start vertex and the current vertex.
+            iii) As soon as destination vertex z is encountered, return the path as the
+            contents of the stack
+            
+            
+c) Topological sorting that is used in job scheduling algorithm :
+
+d)  check whether graph is biptartite  : There should be no adjacent of same color
+
+e) Finding Strongly Connected Components of a graph  : each node is connected with every other node
+
+
+
